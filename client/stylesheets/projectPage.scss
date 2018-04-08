@@ -1,0 +1,56 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+ 
+
+    
+.projectName {
+    text-align: center;
+    display: block;
+    width: 40rem;
+    margin:0 auto;
+    color:gray;
+    font-family: Belleza;
+    margin-top:3rem;
+}   
+
+
+.wrapperProject {
+    display: flex;
+    flex-direction: column;
+    
+
+    .list {
+        margin-top:2rem;
+        margin-left:6rem;
+        font-size: 1.4rem;
+        
+        ul {
+            font-size: 1.2rem;
+            margin-top:1rem;
+            margin-bottom: 2rem;
+            li {
+                span {
+                    font-size:1.2rem;
+                    font-weight: 600;
+                    margin-right: 0.6rem;
+                }
+            }
+        }
+        h5 {
+            margin-bottom:3rem;
+            width:65rem;
+            line-height: 1.6rem;
+            font-family:Titillium Web;
+            text-align: left;
+            font-size: 1.2rem;
+            font-style:italic;
+        } 
+    }
+
+    
+    
+    
+    
+}

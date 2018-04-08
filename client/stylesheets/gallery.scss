@@ -1,0 +1,148 @@
+.wrapForGallery {
+    margin:4rem auto;
+    
+    width:73rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    button {
+        margin-top:0.5rem;
+        margin-left: 0.5rem;
+        display: inline-block;
+        border:none;
+    }
+    
+    .container {
+        position: relative;
+        text-align: center;
+        
+        display: block;
+        .top-left {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            color: white;
+            font-size: 1.6rem;
+            font-family: Raleway;
+        }
+    }
+
+
+    
+    .exterior {
+        width:41.5rem;
+        height: 22rem;
+        padding: 0;
+        img {
+            width: 41.5rem;
+            height: 22rem;
+            padding:0;
+                    
+        }
+        
+    }
+    .video {
+        width:39rem;
+        height: 20rem;
+        padding: 0;
+        video {
+            width:39rem;
+            padding: 0;
+        }
+    }
+    .interior {
+        width:72.5rem;
+        height:40rem;
+        padding:0;
+        img {
+            width: 72.5rem;
+            height: 40rem;
+            padding:0;
+                    
+        }
+    }
+    .showroom {
+        width:33rem;
+        height: 23.5rem;
+        padding: 0;
+        img {
+            width:33rem;
+            height:23.5rem;
+            padding:0;
+        }
+    }
+    .propPlans {
+        width:29.5rem;
+        height: 22rem;
+        padding:0;
+        img {
+            width: 29.5rem;
+            height: 22rem;
+            padding:0;
+                    
+        }
+        
+    }
+    
+    body {
+        padding-top: 50px;
+      }
+      
+      
+      .modal-body {
+          height: 44.5rem;
+          padding: 0;
+          
+      }
+
+      
+      
+      .modal.modal-fullscreen .modal-dialog,
+      .modal.modal-fullscreen .modal-content {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .modal.modal-fullscreen .modal-dialog {
+        margin: 0;
+        width: 100%;
+        animation-duration:0.6s;
+      }
+      .modal.modal-fullscreen .modal-content {
+        border: none;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: inherit;
+        -moz-box-shadow: inherit;
+        -o-box-shadow: inherit;
+        box-shadow: inherit;
+        
+      }
+      
+      .modal.modal-fullscreen.force-fullscreen .modal-body {
+        padding: 0;
+      }
+      .modal.modal-fullscreen.force-fullscreen .modal-header,
+      .modal.modal-fullscreen.force-fullscreen .modal-footer {
+        left: 0;
+        position: absolute;
+        right: 0;
+      }
+      .modal.modal-fullscreen.force-fullscreen .modal-header {
+        top: 0;
+      }
+      .modal.modal-fullscreen.force-fullscreen .modal-footer {
+        bottom: 0;
+      }
+      .item {
+          height:44.5rem;
+          img {
+            width:67.5rem;
+            height:44.8125rem;
+            margin:0 auto;
+          }           
+      }
+}

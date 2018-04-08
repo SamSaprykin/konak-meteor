@@ -1,0 +1,19 @@
+.map-contacts {
+    width: 110rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 34rem;
+    position: relative;
+    
+    .adress {
+        width:60rem;
+        margin-left:5rem;
+        margin-top:6rem;
+        font-family:Belleza;
+        text-align: left;
+        h4 {
+            margin-top:1.2rem;
+        } 
+    }
+}

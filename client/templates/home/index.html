@@ -1,0 +1,38 @@
+<template name="homeIndex">
+    <div class="wrapper"> 
+        {{#each headliners}}
+            <div class="projectIndexPhoto">
+                    <button class="buttonIndex"><a href="{{pathFor 'projects'}}" >{{name}}</a></button>
+            </div>                    
+        {{/each}}
+            <div class="item">
+                <div class="miniWrap " id="firstInvest">
+                    <h2>INVESTMENT OPPORTUNITY</h2>
+                    <h4>Konak Construction projects 
+                        creates green scenic places to live, and you still  
+                        can reach by foot the beach and the sea.
+                    </h4>
+                    <h3>
+                        We invite you to Konak World
+                    </h3>
+                    <a href="{{pathFor 'invest'}}" class="linkRegister">REGISTER INTEREST</a>
+                </div>
+            </div>
+            <div class="item">
+                <h1>NEWS</h1>
+                
+                <div class="miniWrap">
+                    {{#each news}}
+                    <div>
+                        <img 
+                            src="/images/news/{{image}}"/>
+                        <h4>{{title}}</h4>
+                        <span>{{partNews}}</span>
+                        <h3><a href="#">Details</a></h3>
+                    </div>
+                    {{/each}}
+                </div>
+                <button class="buttonNews"><a href="{{pathFor 'news'}}">ALL NEWS</a></button>
+            </div>
+    </div>  
+</template>

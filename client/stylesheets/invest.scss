@@ -1,0 +1,70 @@
+.wrapperInvest {
+    margin:4rem auto;
+    width:70rem;
+    text-align: center;
+    font-family:Belleza;
+    h1 {
+        margin-top:2rem;
+        font-family:Belleza;
+        margin-left:0;
+        padding-bottom: 4rem;
+        border-bottom:1px solid #998f8a;
+    }
+    h3 {
+        font-family:Belleza; 
+    }
+    span {
+        font-family: Belleza;
+        color:#998f8a;
+        width: 50rem;
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+    .form {
+        width:40rem;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        margin-bottom:1rem;
+        height: 2rem;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:1px solid #998f8a;
+        padding-left: 0.6rem;
+        color:#998f8a;
+        font-size: 1.2rem
+    }
+    textarea {
+        color:#998f8a;
+        border:1px solid #998f8a;
+        padding-top:0.6rem;
+        padding-left:0.6rem;
+        font-size: 1.2rem;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        resize: none;
+    }
+    .senddata {
+        width: 10rem;
+        height: 4rem;
+        background-color: white;
+        margin-top:2rem;        
+        color:black;
+        border:1px solid gray;
+        font-family:Belleza;
+        font-size:1.2rem; 
+    }
+    .senddata:hover{
+        border:1px solid black;
+    }
+    input[type=text]:focus {
+        border-bottom: 1px solid #555;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+    }
+}

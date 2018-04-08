@@ -1,0 +1,17 @@
+.wrapper-brand {
+    margin:4rem auto;
+    width:70rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Belleza;
+    
+    ul {
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+    span {
+        margin-top:1rem;
+        font-size: 1.1rem;
+        font-style:italic;
+    }
+}

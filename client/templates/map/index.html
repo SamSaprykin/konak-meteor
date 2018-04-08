@@ -1,0 +1,7 @@
+<template name="mapProject">
+    <h1 class="projectName">{{name}}</h1>
+    {{>navProject}}
+    <div class="map-container">
+        {{> googleMap name="map" options=mapOptions}}
+    </div>
+</template>

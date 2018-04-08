@@ -1,0 +1,258 @@
+.wrapper {
+	margin-top:2rem;
+    display: flex;
+    width:98.8rem;
+    flex-wrap: wrap;
+    
+    
+    .item {
+        margin:3rem auto;
+        text-align: center;
+        width: 75rem;
+        h1 {
+            font-family:Belleza;
+            margin:0 auto;
+            display: block;
+        }
+
+
+        #firstInvest {
+            border-bottom: 1px solid lightgray;
+            background-color: #faf9f7;
+            height: 26rem;
+            width: 70rem;
+            margin:0 auto;
+            flex-direction: column;
+            justify-content: flex-start;
+            h2 {
+                font-family:Belleza;
+                margin:1rem auto;
+                display: block;
+                
+            }
+            h4  {
+                margin: 1rem auto 0;
+                text-align: center;
+                width: 35rem;
+                color: #998f8a;
+                font-family:Belleza;
+            }
+            h3 {
+                margin:2rem auto 0;
+                text-align: center;
+                width: 30rem;
+                color: #998f8a;
+                font-family:Belleza; 
+            }
+            .linkRegister {
+                margin:3rem auto 0;
+                height:3.5rem;
+                width:18.75rem;
+                box-sizing: border-box;
+                background-color:white;
+                color:black;
+                font-family: Georgia;
+                font-style: italic;
+                text-align: center;
+                padding-top: 0.9rem;
+                font-weight: 800;
+                font-size: 1.2rem;
+                border:1px solid #ebebeb; 
+            }
+            .linkRegister:hover {
+                color:gold;
+                transition: 1s color;
+                
+            } 
+            
+        }
+        
+        
+        .miniWrap {
+            margin-top:2rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-top:1px solid lightgray;
+            text-align:left;
+            height: 36rem;
+            div {
+                margin-top:2.5rem;
+                width: 24rem;
+                height:34rem;
+                img {
+                    width:24rem;
+                    height:12rem;
+                }
+                span {
+                    color: #998f8a;
+                    font-family:Belleza;
+                    line-height: 1.2rem;
+                    font-size:1rem;
+                    display: inline-block; 
+                }
+                a {
+                    
+                    font-family:Titillium Web;
+                    font-style: italic;
+                    color:lightgray;
+                }
+
+                a:link {
+                    text-decoration:none;
+                }
+                
+                a:visited {
+                    text-decoration: none;
+                    color:black;
+                }
+                
+                a:hover {
+                    color:#cc9900;
+                    transition: 2s color;
+                    text-decoration:none;	
+                }
+        
+                a:active {
+                    text-decoration: none;
+                    
+                }
+            }
+
+           
+            
+            
+            
+                
+            }
+            .buttonNews {
+                margin: 1rem auto;
+                background: none;
+                border:1px solid #ebebeb;
+                height:3.5rem;
+                width:18.75rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: Georgia;
+                    font-style: bold;
+                    font-style: italic;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                }
+                a:hover {
+                    color:gold;
+                    transition: 1s color;
+                }    
+        }
+    }
+    
+}    
+
+
+
+
+.projectIndexPhoto{
+    filter: grayscale(60%);
+    transition: filter 1s;
+}
+.projectIndexPhoto:hover{
+    filter: grayscale(0%) contrast(100%) brightness(103%);
+    transition: filter 1s;
+}
+
+
+
+.projectIndexPhoto:nth-of-type(1){
+    width:49.39rem;
+    height: 50rem;
+    background-image: url(/images/index/seasideHomes.jpg);  
+    background-size: 200%;
+    background-position: 45% 7%;
+    .buttonIndex {
+        margin: 18rem 15rem; 
+    }    
+}
+
+.projectIndexPhoto:nth-of-type(2){
+    width:49.39rem;
+    height: 50rem;
+    background-image: url(/images/index/seasideSecond.jpg);
+    background-size: 180%;
+    background-position: 62% 80%;
+    .buttonIndex {
+        margin: 18rem 15rem; 
+    }      
+}
+
+
+.projectIndexPhoto:nth-of-type(3){
+    width:30rem;
+    height: 30rem;
+    background-image: url(/images/index/seasideTower.jpg);
+    background-size: 180%;
+    background-position: 68% 10%;
+    .buttonIndex {
+        margin: 12rem 5.375rem; 
+    }        
+}
+
+
+.projectIndexPhoto:nth-of-type(4){
+    width:38.8rem;
+    height: 30rem;
+    background-image: url(/images/index/towerCity.jpg);
+    background-size: 150%;
+    background-position: 25% 13%;
+    .buttonIndex {
+        margin: 12rem 9.655rem; 
+    }       
+}
+
+.projectIndexPhoto:nth-of-type(5){
+    width:30rem;
+    height: 30rem;
+    background-image: url(/images/index/seasidePremium.jpg);
+    background-size: 150%;
+    filter: grayscale(100%);
+    position: relative;
+    z-index: -1;
+    .buttonIndex {
+        margin: 12rem 5.375rem; 
+    }        
+}
+
+
+    .buttonIndex {
+        margin: 2rem auto;
+        background: none;
+        border:1px solid #ebebeb;
+        height:3.5rem;
+        width:18.75rem;
+                 
+        a {
+            text-decoration: none;
+            color: #ebebeb;
+            font-family: Georgia;
+            font-style: bold;
+            font-style: italic;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+        a:hover {
+            color:gold;
+            transition: 2s color;
+        }
+    }
+
+
+    
+
+
+
+
+    
+    
+
+    

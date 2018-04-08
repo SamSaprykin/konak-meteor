@@ -1,0 +1,38 @@
+<template name="nav">
+        <header>
+                <div class="wrapperHeader">  
+                    <a href="https://www.facebook.com/konakcons" class='facebook'></a>
+                    <a href="https://www.instagram.com/konakconstructiongroup/" class='instagram'></a>    
+                    <a class="logoLink" href="{{pathFor 'homeIndex'}}"><div class="logo"></div></a>            
+                    <a href="{{pathFor 'invest'}}" class='interest'>Register interest</a> 
+                </div>
+                        
+                <nav id="nav">
+                    <div class="dropdown">
+                        <a href="{{pathFor 'projects'}}" class="dropbtn">Projects  
+                            <span class='top-menu backticks'>//</span>
+                                
+                                <div class="dropdown-content">
+                                    {{#each headliners}}
+                                        <a href="{{pathFor 'projects'}}" >{{name}}</a>
+                                    {{/each}}
+                                </div>
+                                 
+                        </a> 
+                    </div> 
+                    
+                    <a href="{{pathFor 'invest'}}">Invest  
+                        <span class='top-menu backticks'>//</span>
+                    </a> 
+                    <a href="{{pathFor 'news'}}">News  
+                        <span class='top-menu backticks'>//</span>
+                    </a> 
+                    <a href="{{pathFor 'brand'}}">Brand  
+                        <span class='top-menu backticks'>//</span>
+                    </a>
+                    <a href="{{pathFor 'contacts'}}">Contacts  
+                        <span class='top-menu backticks'>//</span>
+                    </a>  
+                </nav>
+        </header>
+</template>

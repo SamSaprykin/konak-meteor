@@ -1,0 +1,333 @@
+@mixin box-sizing($box-model) {
+	-webkit-box-sizing: $box-model; // Safari <= 5
+	   -moz-box-sizing: $box-model; // Firefox <= 19
+			box-sizing: $box-model;
+}
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+			border-radius: $radius;
+}
+
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+a:link {
+	text-decoration:none;
+}
+
+a:visited {
+	text-decoration: none;
+	color:white;
+}
+
+a:hover {
+	color:#cc9900;
+	transition: 2s color;
+	text-decoration:none;	
+}
+
+a:active {
+	text-decoration: none;
+	
+}
+
+
+*{@include box-sizing(border-box);}
+
+html {
+	font-size:1vw;
+}
+
+body{
+	font-family: helvetica, arial, sans-serif;
+	padding-top: 15rem;
+	@include transition(padding-top .5s ease);
+}
+
+
+
+header{
+	width: 100%;
+	height: 15.625rem;
+	text-align: center;
+	position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	@include transition(all .5s ease);
+	.wrapperHeader {
+		display: flex;
+		flex-direction: row;
+
+		.displayNone {
+			width:0;
+		}
+		
+		.facebook {
+			background-image: url('/images/001-facebook.png');
+			background-size:100%;
+			width: 1.1875rem;
+			height: 1.1875rem;
+			margin-top:2rem;
+			margin-left:4.375rem;
+		}
+		.instagram {
+			background-image: url('/images/002-instagram.png');
+			background-size:100%;
+			width: 1.1875rem;
+			height: 1.1875rem;
+			margin-top:2rem;
+			margin-left:1.1875rem;
+		}
+		
+		.logo{
+			margin-top:2.2rem;
+			margin-left:28.05rem;			
+			background-image: url('/images/logo.jpg');
+			background-repeat: no-repeat;
+			background-size:100%;
+			width:28.125rem;
+			height:7.59375rem;
+			@include transition(all .3s ease);
+			
+		}
+		.interest {
+			text-decoration: none;
+			color:#cc9900;
+			font-family: Titillium Web;
+			font-style: italic;
+			margin-top:2rem;
+			margin-left:21rem;
+			height: 1rem;
+			display: inline-block;
+			font-size: 1rem;
+		}
+	}
+
+	.borderNav {
+		border-bottom: 0.5px solid lightgray;		
+	}
+	
+	nav{
+		position: absolute;
+		bottom: 0;
+		height: 3.75rem;
+		line-height: 3.75rem;
+		width: 100%;
+		background-color: white;
+		
+		
+
+		a{
+			color:black;
+			font-family:Raleway;
+			display: inline-block;
+			padding: 0.625rem 0.9375rem;
+			line-height: 1;
+			font-size: 1.3rem;
+			font-weight: 400;
+			text-decoration:none;
+	   @include border-radius(2px);
+				
+		}
+
+		a:link {
+			text-decoration:none;
+		}
+		
+		a:visited {
+			text-decoration: none;
+			color:black;
+		}
+		
+		a:hover {
+			color:#cc9900;
+			transition: 2s color;
+			text-decoration:none;	
+		}
+
+		a:active {
+			text-decoration: none;
+			
+		}
+		.backticks {
+			margin-left: 2rem;
+		}
+		
+	}
+}
+h2{
+	font-size: 2.125rem;
+	text-transform: uppercase;
+	font-weight: 100;
+	line-height: 2;
+	color: #2c3e50;
+}
+p{
+	margin-bottom: 2rem;
+	line-height: 2;
+	color: #7f8c8d;
+}
+
+section{
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	@include border-radius(4px);
+}
+
+/* Sticky Header Style */	
+/* ---------------------------------------- */ 
+body.sticky-header{
+	padding-top: 6.25rem;
+	header{
+		height: 3.75rem;
+		.logo{
+			@include scale(0);
+		}
+
+	}
+}
+
+
+.wrapperFooter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 14.625rem;
+  border-top:1px solid lightgray;
+  .textInfo:nth-of-type(1) {
+	  margin-top: 2.43rem;
+  }
+  .textInfo {
+	  color:#cc9900;
+	  font-family: Titillium Web;
+	  width:26.375rem;
+	  margin-left: 3.525rem;
+	  font-size:0.9rem;
+	  font-weight: 300;
+	  margin-top:1rem; 
+  }
+  .adress {
+	  font-family: Titillium Web;
+	  font-size:0.9rem;
+	  margin-left:9.375rem;
+	  width:20.06rem;
+	  color:#000000;
+	  margin-top:4.43rem;
+	  text-align: center;
+  }
+  .subscribeAndRights {
+	  margin-left:12.187rem;
+	  margin-top:2.43rem;
+	  .newsletter{
+		  font-family: Titillium Web;
+		  font-size:1rem;
+		  font-style: italic;
+
+	  }
+	  .copyright {
+		  margin-top:2.23rem;
+		  color: black;
+		  font-family: Titillium Web;
+		  font-size:0.8rem;
+		  font-style: italic;
+	  }
+	  .policy {
+		  color:#cc9900;
+		  font-size:0.9rem;
+		  margin-top:0.925rem;
+	  }
+	  .inputWrapper {
+		  display: flex;
+		  flex-direction: row;
+		  margin-top:1.5rem;
+	  }
+
+	  .iconNewsletter {
+		  width:2.1875rem;
+		  height:1.65rem;
+		  background-color: #ebebeb;
+		  padding-top: 0.2rem;
+		  padding-left: 0.7rem;
+		  color:white;
+	  }
+  }	
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;    
+        
+	border: none;
+	
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+	display: inline-block;
+	text-align: center;
+	
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+	min-width: 18rem;
+	right:-2rem;    
+    z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 1rem 0.5rem 0.3rem;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:nth-of-type(5){
+  pointer-events: none;
+  cursor: default;
+  text-decoration:none;
+  color:black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color:#cc9900}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+

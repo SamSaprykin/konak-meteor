@@ -1,0 +1,25 @@
+<template name="projects">
+    <div class="wrapperProject">
+        <h1 class="projectName">{{name}}</h1>
+        
+        {{>navProject}}
+                                    
+        <div class="list">{{name}} has : 
+            <ul>
+                <li><span>{{gardenDuplexThreeB}}</span> 3+1 garden duplex apartments,</li>
+                <li><span>{{gardenDuplexTwoB}}</span>   2+1 garden duplex apartments,</li>
+                <li><span>{{studio}}</span> studio apartments,</li>
+                <li><span>{{oneB}}</span>1+1 apartments,</li>
+                <li><span>{{twoB}}</span>2+1 apartments,</li>
+                <li><span>{{penthouseThreeB}}</span>3+1 penthouse duplex apartments;</li>
+            </ul>
+            <h5>{{details}}</h5>
+            <ul>
+                {{#each tech in technical}}
+                    <li>{{tech}}</li>
+                {{/each}}
+            </ul>
+            <h5>{{technicalities}}</h5>
+        </div>        
+    </div>
+</template>

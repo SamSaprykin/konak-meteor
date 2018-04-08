@@ -1,0 +1,18 @@
+<template name="news">
+    <div class="wrapper">
+        <div class="item">
+                <h1>NEWS</h1>            
+                <div id="heightHigh" class="miniWrap">
+                    {{#each fullnews}}
+                    <div>
+                        <img 
+                            src="/images/news/{{image}}"/>
+                        <h4>{{title}}</h4>
+                        <span>{{fullNews}}</span>
+                        </div>
+                        {{/each}}
+                    </div>
+            </div>   
+    </div>
+       
+</template>
