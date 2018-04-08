@@ -235,7 +235,7 @@ var ProjectsSeeds = [
             "205.jpg",
             "206.jpg",
             "208.jpg",
-            "209.jpg",
+            "209.jpg"
         ],
         "Interioractive":"200.jpg",
         "ShowRoom":[
@@ -246,7 +246,7 @@ var ProjectsSeeds = [
             "sr205.jpg",
             "sr206.jpg",
             "sr207.jpg",
-            "sr208.jpg",
+            "sr208.jpg"
             
         ],
         "ShowRoomactive":"sr200.jpg",
