@@ -3,7 +3,8 @@ if(Meteor .isClient){
         GoogleMaps.ready('map', function(map) {
             var marker = new google.maps.Marker({
                 position: map.options.center,
-                map: map.instance
+                map: map.instance,
+                title:"Konak construction office"
               });
         });
         
