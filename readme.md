@@ -2,7 +2,7 @@
 
 Konak construction project with meteor
 
-Simple site for turkish real estatea company
+Simple site for turkish real estate company
 
 
 # Author 
