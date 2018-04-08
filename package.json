@@ -1,5 +1,5 @@
 {
-  "name": "Konak",
+  "name": "konak",
   "private": true,
   "scripts": {
     "start": "meteor run"
