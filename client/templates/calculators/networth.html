@@ -1,0 +1,31 @@
+<template name="networth">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/calculators">Calculators</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Net Worth Calculator</li>
+                    </ol>
+                </nav>
+                
+                <!-- Language Toggle -->
+                <div class="text-right mb-3">
+                    <div class="btn-group" role="group" aria-label="Language selection">
+                        <button type="button" class="btn btn-outline-primary btn-sm language-btn" data-lang="en">
+                            English
+                        </button>
+                        <button type="button" class="btn btn-outline-primary btn-sm language-btn" data-lang="fr">
+                            Français
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- React Component Container -->
+                <div class="react-container" id="networth-calculator"></div>
+            </div>
+        </div>
+    </div>
+</template>
